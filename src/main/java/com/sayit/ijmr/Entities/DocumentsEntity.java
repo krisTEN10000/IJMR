@@ -26,4 +26,7 @@ public class DocumentsEntity {
     @JoinColumn(name = "issue_id", nullable = false)
     private IssueEntity issue;
 
+    @ManyToOne
+    @JoinColumn(name = "volume_id", nullable = false)
+    private VolumeEntity volume;
 }

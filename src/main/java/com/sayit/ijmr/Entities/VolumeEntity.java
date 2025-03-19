@@ -20,10 +20,6 @@ public class VolumeEntity {
 
     private String volumeName;
 
-    private String description;
-
-    private String createdAt;
-
     @OneToMany(mappedBy = "volume", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<IssueEntity> issueEntities;
 }

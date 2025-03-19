@@ -6,7 +6,5 @@ import lombok.Data;
 public class VolumeCreatorDTO {
     private String volumeName;
 
-    private String createdAt;
-
     private String description;
 }
